@@ -1,0 +1,12 @@
+graphics_cards=['GTX 1060', 'GTX 1070', 'GTX 3060', 'GTX 3070']
+print(graphics_cards)
+
+too_expensive = 'GTX 3060'
+graphics_cards.remove(too_expensive)
+too_expensive = 'GTX 3070'
+graphics_cards.remove(too_expensive)
+print(graphics_cards)
+print(f"\nA {too_expensive.title()} is way too much for what it gives.")
+
+graphics_cards.sort(reverse=True)
+print(graphics_cards)

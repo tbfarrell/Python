@@ -1,0 +1,4 @@
+my_foods = ['boneless pizza', 'falafel','cheese' ]
+
+print("Some of my favorite foods are:")
+print(my_foods)

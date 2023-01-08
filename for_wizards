@@ -1,0 +1,10 @@
+print("Today's roster: \n")
+wizards_list = ['gandalf', 'dumbledore','merlin','linus']
+for wizard in wizards_list:
+	print(f"{wizard.title()}.\n")
+
+for wizard in wizards_list:
+	print(f"{wizard.title()}, splendid magic trick!")
+	print(f"I can't wait to see what {wizard.title()} does next! \n")
+
+print('Fine show, everybody!')

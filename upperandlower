@@ -1,0 +1,6 @@
+firstname = "hugh"
+lastname = "janus"
+full_name = f"{firstname} {lastname}"
+message = full_name.title()
+print(message)
+print("\tLOL\n\tFUNNY")
