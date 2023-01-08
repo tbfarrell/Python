@@ -1,0 +1,18 @@
+import pyfirmata
+import time
+
+board = pyfirmata.Arduino('COM5')
+
+it = pyfirmata.util.Iterator(board)
+it.start()
+
+analog_input = board.get_pin('a:0:i')
+#potentiometer is on analog in A0
+led = board.get_pin('d:11:p')
+#the 470 ohm resistor plugs into pin 11, connects to the LED, and it grounded.
+
+while True:
+	analog_value = analog_input.read()
+	if analog_value is not None:
+		led.write(analog_value)
+	time.sleep(0.1)
